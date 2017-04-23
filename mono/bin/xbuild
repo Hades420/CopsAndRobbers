@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "${BASH_SOURCE%/*}"/mono $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/mono/xbuild/14.0/bin/)"xbuild.exe "$@"

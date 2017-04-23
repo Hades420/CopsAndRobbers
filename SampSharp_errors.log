@@ -1,0 +1,93 @@
+[22/04/2017 21:39:11] Exception thrownOnPlayerDisconnect:
+System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+  at System.Threading.Tasks.TaskCompletionSource`1[TResult].SetCanceled () [0x0000b] in C:\j\workspace\v\repos\mono\mcs\class\referencesource\mscorlib\system\threading\Tasks\TaskCompletionSource.cs:370 
+  at SampSharp.GameMode.Tools.ASyncWaiter`2[TKey,TArguments].Cancel (TKey key) [0x0002e] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Tools.ASyncWaiter`2[TKey,TArguments].disposable_Disposed (System.Object sender, System.EventArgs e) [0x00010] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Tools.Disposable.OnDisposed (System.Boolean disposing) [0x00011] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Tools.Disposable.Dispose () [0x00009] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.World.BasePlayer.OnCleanup (SampSharp.GameMode.Events.DisconnectEventArgs e) [0x00013] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Controllers.BasePlayerController+<>c.<RegisterEvents>b__0_2 (System.Object sender, SampSharp.GameMode.Events.DisconnectEventArgs args) [0x0000a] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at (wrapper delegate-invoke) System.EventHandler`1[SampSharp.GameMode.Events.DisconnectEventArgs]:invoke_void_object_TEventArgs (object,SampSharp.GameMode.Events.DisconnectEventArgs)
+  at SampSharp.GameMode.BaseMode.OnPlayerCleanup (SampSharp.GameMode.World.BasePlayer player, SampSharp.GameMode.Events.DisconnectEventArgs e) [0x0000a] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at CopsAndRobbers.GameMode.OnPlayerCleanup (SampSharp.GameMode.World.BasePlayer player, SampSharp.GameMode.Events.DisconnectEventArgs e) [0x0000b] in <d4b6dad9f4d147cfa000fe12e2f410f0>:0 
+  at SampSharp.GameMode.BaseMode.OnPlayerDisconnect (System.Int32 playerid, System.Int32 reason) [0x0001b] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+[22/04/2017 23:54:35] Exception thrownOnPlayerDisconnect:
+System.IO.IOException: Sharing violation on path C:\Users\jewes\OneDrive\Projects\CopsAndRobbers\CopsAndRobbers\bin\scriptfiles\AccountData\AWAREWOLF\saved.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00335] in C:\j\workspace\v\repos\mono\mcs\class\corlib\System.IO\FileStream.cs:290 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in C:\j\workspace\v\repos\mono\mcs\class\corlib\System.IO\FileStream.cs:152 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamWriter.CreateFile (System.String path, System.Boolean append, System.Boolean checkHost) [0x0000e] in C:\j\workspace\v\repos\mono\mcs\class\referencesource\mscorlib\system\io\streamwriter.cs:226 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize, System.Boolean checkHost) [0x00061] in C:\j\workspace\v\repos\mono\mcs\class\referencesource\mscorlib\system\io\streamwriter.cs:192 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00000] in C:\j\workspace\v\repos\mono\mcs\class\referencesource\mscorlib\system\io\streamwriter.cs:174 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in C:\j\workspace\v\repos\mono\mcs\class\referencesource\mscorlib\system\io\streamwriter.cs:168 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter:.ctor (string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00000] in C:\j\workspace\v\repos\mono\mcs\class\corlib\System.IO\File.cs:605 
+  at System.IO.File.WriteAllText (System.String path, System.String contents) [0x00000] in C:\j\workspace\v\repos\mono\mcs\class\corlib\System.IO\File.cs:600 
+  at CopsAndRobbers.GameMode.Save (SampSharp.GameMode.World.BasePlayer player) [0x001a1] in <a231de54489f471199ccf93d765eb872>:0 
+  at CopsAndRobbers.GameMode.OnPlayerDisconnected (SampSharp.GameMode.World.BasePlayer player, SampSharp.GameMode.Events.DisconnectEventArgs e) [0x0002b] in <a231de54489f471199ccf93d765eb872>:0 
+  at SampSharp.GameMode.BaseMode.OnPlayerDisconnect (System.Int32 playerid, System.Int32 reason) [0x0000e] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+[22/04/2017 23:57:15] Exception thrownOnPlayerConnect:
+Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Path '', line 0, position 0.
+  at Newtonsoft.Json.Linq.JObject.Load (Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Linq.JsonLoadSettings settings) [0x00026] in <0db320ea9c284716ba6369641babde67>:0 
+  at Newtonsoft.Json.Linq.JObject.Parse (System.String json, Newtonsoft.Json.Linq.JsonLoadSettings settings) [0x0000c] in <0db320ea9c284716ba6369641babde67>:0 
+  at Newtonsoft.Json.Linq.JObject.Parse (System.String json) [0x00000] in <0db320ea9c284716ba6369641babde67>:0 
+  at CopsAndRobbers.GameMode.Load (SampSharp.GameMode.World.BasePlayer player) [0x001c3] in <a231de54489f471199ccf93d765eb872>:0 
+  at CopsAndRobbers.GameMode.OnPlayerConnected (SampSharp.GameMode.World.BasePlayer player, System.EventArgs e) [0x00022] in <a231de54489f471199ccf93d765eb872>:0 
+  at SampSharp.GameMode.BaseMode.OnPlayerConnect (System.Int32 playerid) [0x00007] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+[23/04/2017 00:02:13] Exception thrownOnPlayerCommandText:
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentException: Row must contain 5 cells.
+Parameter name: item
+  at SampSharp.GameMode.Display.TablistDialog.Add (System.Collections.Generic.IEnumerable`1[T] item) [0x00037] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Display.TablistDialog.Add (System.String[] cells) [0x00000] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at CopsAndRobbers.GameMode.COMMAND_RecentLogins (SampSharp.GameMode.World.BasePlayer player) [0x0008a] in <9471fa814c324e989e7de80a4cc294d1>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in C:\j\workspace\v\repos\mono\mcs\class\corlib\System.Reflection\MonoMethod.cs:305 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0004d] in C:\j\workspace\v\repos\mono\mcs\class\corlib\System.Reflection\MonoMethod.cs:313 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in C:\j\workspace\v\repos\mono\mcs\class\referencesource\mscorlib\system\reflection\methodbase.cs:229 
+  at SampSharp.GameMode.SAMP.Commands.DefaultCommand.Invoke (SampSharp.GameMode.World.BasePlayer player, System.String commandText) [0x000f1] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.SAMP.Commands.CommandsManager.Process (System.String commandText, SampSharp.GameMode.World.BasePlayer player) [0x0000c] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Controllers.CommandController.gameMode_PlayerCommandText (System.Object sender, SampSharp.GameMode.Events.CommandTextEventArgs e) [0x00021] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at (wrapper delegate-invoke) System.EventHandler`1[SampSharp.GameMode.Events.CommandTextEventArgs]:invoke_void_object_TEventArgs (object,SampSharp.GameMode.Events.CommandTextEventArgs)
+  at SampSharp.GameMode.BaseMode.OnPlayerCommandText (SampSharp.GameMode.World.BasePlayer player, SampSharp.GameMode.Events.CommandTextEventArgs e) [0x0000a] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at CopsAndRobbers.GameMode.OnPlayerCommandText (SampSharp.GameMode.World.BasePlayer player, SampSharp.GameMode.Events.CommandTextEventArgs e) [0x0000b] in <9471fa814c324e989e7de80a4cc294d1>:0 
+  at SampSharp.GameMode.BaseMode.OnPlayerCommandText (System.Int32 playerid, System.String cmdtext) [0x0000e] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+[23/04/2017 00:06:01] Exception thrownOnPlayerDisconnect:
+System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+  at System.Threading.Tasks.TaskCompletionSource`1[TResult].SetCanceled () [0x0000b] in C:\j\workspace\v\repos\mono\mcs\class\referencesource\mscorlib\system\threading\Tasks\TaskCompletionSource.cs:370 
+  at SampSharp.GameMode.Tools.ASyncWaiter`2[TKey,TArguments].Cancel (TKey key) [0x0002e] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Tools.ASyncWaiter`2[TKey,TArguments].disposable_Disposed (System.Object sender, System.EventArgs e) [0x00010] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Tools.Disposable.OnDisposed (System.Boolean disposing) [0x00011] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Tools.Disposable.Dispose () [0x00009] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.World.BasePlayer.OnCleanup (SampSharp.GameMode.Events.DisconnectEventArgs e) [0x00013] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Controllers.BasePlayerController+<>c.<RegisterEvents>b__0_2 (System.Object sender, SampSharp.GameMode.Events.DisconnectEventArgs args) [0x0000a] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at (wrapper delegate-invoke) System.EventHandler`1[SampSharp.GameMode.Events.DisconnectEventArgs]:invoke_void_object_TEventArgs (object,SampSharp.GameMode.Events.DisconnectEventArgs)
+  at SampSharp.GameMode.BaseMode.OnPlayerCleanup (SampSharp.GameMode.World.BasePlayer player, SampSharp.GameMode.Events.DisconnectEventArgs e) [0x0000a] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at CopsAndRobbers.GameMode.OnPlayerCleanup (SampSharp.GameMode.World.BasePlayer player, SampSharp.GameMode.Events.DisconnectEventArgs e) [0x0000b] in <530e904f221048fd9a9cf2bac81bb697>:0 
+  at SampSharp.GameMode.BaseMode.OnPlayerDisconnect (System.Int32 playerid, System.Int32 reason) [0x0001b] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+[23/04/2017 00:09:14] Exception thrownOnPlayerDisconnect:
+System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+  at System.Threading.Tasks.TaskCompletionSource`1[TResult].SetCanceled () [0x0000b] in C:\j\workspace\v\repos\mono\mcs\class\referencesource\mscorlib\system\threading\Tasks\TaskCompletionSource.cs:370 
+  at SampSharp.GameMode.Tools.ASyncWaiter`2[TKey,TArguments].Cancel (TKey key) [0x0002e] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Tools.ASyncWaiter`2[TKey,TArguments].disposable_Disposed (System.Object sender, System.EventArgs e) [0x00010] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Tools.Disposable.OnDisposed (System.Boolean disposing) [0x00011] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Tools.Disposable.Dispose () [0x00009] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.World.BasePlayer.OnCleanup (SampSharp.GameMode.Events.DisconnectEventArgs e) [0x00013] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Controllers.BasePlayerController+<>c.<RegisterEvents>b__0_2 (System.Object sender, SampSharp.GameMode.Events.DisconnectEventArgs args) [0x0000a] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at (wrapper delegate-invoke) System.EventHandler`1[SampSharp.GameMode.Events.DisconnectEventArgs]:invoke_void_object_TEventArgs (object,SampSharp.GameMode.Events.DisconnectEventArgs)
+  at SampSharp.GameMode.BaseMode.OnPlayerCleanup (SampSharp.GameMode.World.BasePlayer player, SampSharp.GameMode.Events.DisconnectEventArgs e) [0x0000a] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at CopsAndRobbers.GameMode.OnPlayerCleanup (SampSharp.GameMode.World.BasePlayer player, SampSharp.GameMode.Events.DisconnectEventArgs e) [0x0000b] in <530e904f221048fd9a9cf2bac81bb697>:0 
+  at SampSharp.GameMode.BaseMode.OnPlayerDisconnect (System.Int32 playerid, System.Int32 reason) [0x0001b] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+[23/04/2017 00:14:33] Exception thrownOnPlayerDisconnect:
+System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+  at System.Threading.Tasks.TaskCompletionSource`1[TResult].SetCanceled () [0x0000b] in C:\j\workspace\v\repos\mono\mcs\class\referencesource\mscorlib\system\threading\Tasks\TaskCompletionSource.cs:370 
+  at SampSharp.GameMode.Tools.ASyncWaiter`2[TKey,TArguments].Cancel (TKey key) [0x0002e] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Tools.ASyncWaiter`2[TKey,TArguments].disposable_Disposed (System.Object sender, System.EventArgs e) [0x00010] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Tools.Disposable.OnDisposed (System.Boolean disposing) [0x00011] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Tools.Disposable.Dispose () [0x00009] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.World.BasePlayer.OnCleanup (SampSharp.GameMode.Events.DisconnectEventArgs e) [0x00013] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at SampSharp.GameMode.Controllers.BasePlayerController+<>c.<RegisterEvents>b__0_2 (System.Object sender, SampSharp.GameMode.Events.DisconnectEventArgs args) [0x0000a] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at (wrapper delegate-invoke) System.EventHandler`1[SampSharp.GameMode.Events.DisconnectEventArgs]:invoke_void_object_TEventArgs (object,SampSharp.GameMode.Events.DisconnectEventArgs)
+  at SampSharp.GameMode.BaseMode.OnPlayerCleanup (SampSharp.GameMode.World.BasePlayer player, SampSharp.GameMode.Events.DisconnectEventArgs e) [0x0000a] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
+  at CopsAndRobbers.GameMode.OnPlayerCleanup (SampSharp.GameMode.World.BasePlayer player, SampSharp.GameMode.Events.DisconnectEventArgs e) [0x0000b] in <eec50e0f434b43fabc341956be0cca8c>:0 
+  at SampSharp.GameMode.BaseMode.OnPlayerDisconnect (System.Int32 playerid, System.Int32 reason) [0x0001b] in <c2ea34b026154eeca32b524eb33ad9dd>:0 
