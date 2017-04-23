@@ -14410,3 +14410,282 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [00:35:12] OnPlayerDisconnected
 [00:35:12] OnPlayerCleanup
 [00:35:12] [part] AwareWolf has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[06:33:18] filterscripts = ""  (string)
+[06:33:18] 
+[06:33:18] Server Plugins
+[06:33:18] --------------
+[06:33:18]  Loading plugin: crashdetect.dll
+[06:33:19]   CrashDetect v4.18.1 is OK.
+[06:33:19]   Loaded.
+[06:33:19]  Loading plugin: SampSharp.dll
+[06:33:20] 
+[06:33:20] SampSharp Plugin
+[06:33:20] ----------------
+[06:33:20] v0.7.6221.37952, (C)2014-2017 Tim Potze
+[06:33:20] 
+[06:33:20]   Loaded.
+[06:33:20]  Loaded 2 plugins.
+
+[06:33:20] 
+[06:33:20] Filterscripts
+[06:33:20] ---------------
+[06:33:20]   Loaded 0 filterscripts.
+
+[06:33:20]   Filterscript 'empty.amx' loaded.
+[06:33:21] Gamemode
+[06:33:21] ---------------
+[06:33:21] Loading gamemode: CopsAndRobbers:GameMode
+[06:33:21] Loading image...
+[06:33:21] Creating gamemode instance...
+[06:33:25]   Loaded.
+[06:33:25] 
+[06:33:25] OnInitialized
+[06:33:25] Number of vehicle models: 37
+[06:33:25] LoadControllers
+[06:33:57] [connection] 127.0.0.1:64790 requests connection cookie.
+[06:33:58] [connection] incoming connection: 127.0.0.1:64790 id: 0
+[06:33:58] OnIncomingConnection
+[06:33:58] [join] AwareWolf has joined the server (0:127.0.0.1)
+[06:33:58] OnPlayerConnected
+[06:33:59] OnPlayerRequestClass
+[06:33:59] OnPlayerStateChanged
+[06:34:00] OnPlayerRequestClass
+[06:34:04] OnDialogResponse
+[06:34:05] OnPlayerStateChanged
+[06:34:05] OnPlayerSpawned
+[06:34:05] OnPlayerStateChanged
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnVehicleStreamIn
+[06:34:06] OnUnoccupiedVehicleUpdated
+[06:34:06] OnUnoccupiedVehicleUpdated
+[06:34:06] OnUnoccupiedVehicleUpdated
+[06:34:06] OnUnoccupiedVehicleUpdated
+[06:34:06] OnUnoccupiedVehicleUpdated
+[06:34:14] OnPlayerKeyStateChanged
+[06:34:16] OnPlayerKeyStateChanged
+[06:34:20] OnPlayerEnterVehicle
+[06:34:20] OnPlayerKeyStateChanged
+[06:34:21] OnPlayerKeyStateChanged
+[06:34:22] OnUnoccupiedVehicleUpdated
+[06:34:23] OnUnoccupiedVehicleUpdated
+[06:34:23] OnUnoccupiedVehicleUpdated
+[06:34:23] OnUnoccupiedVehicleUpdated
+[06:34:23] OnPlayerStateChanged
+[06:34:24] OnPlayerExitVehicle
+[06:34:24] OnPlayerKeyStateChanged
+[06:34:25] OnPlayerKeyStateChanged
+[06:34:25] OnPlayerStateChanged
+[06:34:34] OnPlayerKeyStateChanged
+[06:34:39] OnPlayerKeyStateChanged
+[06:34:53] OnPlayerDisconnected
+[06:34:53] OnPlayerCleanup
+[06:34:53] [part] AwareWolf has left the server (0:1)
+[06:35:06] [debug] Server received interrupt signal
+[06:35:06] [debug] Native backtrace:
+[06:35:06] [debug] #0 7750c57c in ?? () from C:\WINDOWS\SYSTEM32\ntdll.dll
+[06:35:06] [debug] #1 7502104f in ?? () from C:\WINDOWS\SYSTEM32\KERNELBASE.dll
+[06:35:06] [debug] #2 0048d53c in ?? () from samp-server.exe
+[06:35:06] [debug] #3 0049b4a1 in ?? () from samp-server.exe
+[06:35:06] [debug] #4 0049b4b1 in ?? () from samp-server.exe
+[06:35:06] --- Server Shutting Down.
+[06:35:06] OnExited
+[06:35:06] 
+[06:35:06] ---------------
+[06:35:06] Unloading gamemode: CopsAndRobbers:GameMode
+[06:35:06] Stopping timers...
+[06:35:06] Unloading extensions...
+[06:35:06] Clearing callbacks table...
+[06:35:06] Disposing gamemode...
+[06:35:06] Collecting garbage...
+[06:35:06] Closing images...
+[06:35:06] Collecting garbage...
+[06:35:06]   Unloaded.
+[06:35:06] 
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[06:55:04] filterscripts = ""  (string)
+[06:55:04] 
+[06:55:04] Server Plugins
+[06:55:04] --------------
+[06:55:04]  Loading plugin: crashdetect.dll
+[06:55:04]   CrashDetect v4.18.1 is OK.
+[06:55:04]   Loaded.
+[06:55:04]  Loading plugin: SampSharp.dll
+[06:55:04] 
+[06:55:04] SampSharp Plugin
+[06:55:04] ----------------
+[06:55:04] v0.7.6221.37952, (C)2014-2017 Tim Potze
+[06:55:04] 
+[06:55:04]   Loaded.
+[06:55:04]  Loaded 2 plugins.
+
+[06:55:04] 
+[06:55:04] Filterscripts
+[06:55:04] ---------------
+[06:55:04]   Loaded 0 filterscripts.
+
+[06:55:04]   Filterscript 'empty.amx' loaded.
+[06:55:04] Gamemode
+[06:55:04] ---------------
+[06:55:04] Loading gamemode: CopsAndRobbers:GameMode
+[06:55:04] Loading image...
+[06:55:04] Creating gamemode instance...
+[06:55:04]   Loaded.
+[06:55:04] 
+[06:55:04] OnInitialized
+[06:55:04] Number of vehicle models: 37
+[06:55:04] LoadControllers
+[06:55:27] [connection] 127.0.0.1:63560 requests connection cookie.
+[06:55:28] [connection] incoming connection: 127.0.0.1:63560 id: 0
+[06:55:28] OnIncomingConnection
+[06:55:28] [join] AwareWolf has joined the server (0:127.0.0.1)
+[06:55:28] OnPlayerConnected
+[06:55:28] OnPlayerRequestClass
+[06:55:28] OnPlayerStateChanged
+[06:55:29] OnPlayerRequestClass
+[06:55:31] OnDialogResponse
+[06:55:31] OnPlayerStateChanged
+[06:55:31] OnPlayerSpawned
+[06:55:31] OnPlayerStateChanged
+[06:55:36] OnPlayerCommandText
+[06:55:42] OnDialogResponse
+[06:55:46] OnPlayerCommandText
+[06:55:48] OnDialogResponse
+[06:55:49] OnVehicleStreamIn
+[06:55:49] OnVehicleStreamIn
+[06:55:49] OnVehicleStreamIn
+[06:55:49] OnVehicleStreamIn
+[06:55:49] OnVehicleStreamIn
+[06:55:49] OnVehicleStreamIn
+[06:55:49] OnVehicleStreamIn
+[06:55:49] OnVehicleStreamIn
+[06:55:49] OnVehicleStreamIn
+[06:55:49] OnVehicleStreamIn
+[06:55:49] OnUnoccupiedVehicleUpdated
+[06:55:49] OnUnoccupiedVehicleUpdated
+[06:55:49] OnUnoccupiedVehicleUpdated
+[06:55:49] OnUnoccupiedVehicleUpdated
+[06:55:49] OnUnoccupiedVehicleUpdated
+[06:55:49] OnUnoccupiedVehicleUpdated
+[06:55:49] OnUnoccupiedVehicleUpdated
+[06:55:49] OnUnoccupiedVehicleUpdated
+[06:55:49] OnUnoccupiedVehicleUpdated
+[06:55:49] OnUnoccupiedVehicleUpdated
+[06:55:58] OnPlayerCommandText
+[06:56:03] OnDialogResponse
+[06:56:14] OnPlayerCommandText
+[06:56:19] OnDialogResponse
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamIn
+[06:56:20] OnVehicleStreamOut
+[06:56:20] OnVehicleStreamOut
+[06:56:20] OnVehicleStreamOut
+[06:56:20] OnVehicleStreamOut
+[06:56:20] OnVehicleStreamOut
+[06:56:20] OnVehicleStreamOut
+[06:56:20] OnVehicleStreamOut
+[06:56:20] OnVehicleStreamOut
+[06:56:20] OnVehicleStreamOut
+[06:56:20] OnVehicleStreamOut
+[06:56:20] OnUnoccupiedVehicleUpdated
+[06:56:20] OnUnoccupiedVehicleUpdated
+[06:56:20] OnUnoccupiedVehicleUpdated
+[06:56:20] OnUnoccupiedVehicleUpdated
+[06:56:20] OnUnoccupiedVehicleUpdated
+[06:56:20] OnUnoccupiedVehicleUpdated
+[06:56:20] OnUnoccupiedVehicleUpdated
+[06:56:20] OnUnoccupiedVehicleUpdated
+[06:56:27] OnPlayerDisconnected
+[06:56:27] OnPlayerCleanup
+[06:56:27] [part] AwareWolf has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[06:57:35] filterscripts = ""  (string)
+[06:57:35] 
+[06:57:35] Server Plugins
+[06:57:35] --------------
+[06:57:35]  Loading plugin: crashdetect.dll
+[06:57:35]   CrashDetect v4.18.1 is OK.
+[06:57:35]   Loaded.
+[06:57:35]  Loading plugin: SampSharp.dll
+[06:57:35] 
+[06:57:35] SampSharp Plugin
+[06:57:35] ----------------
+[06:57:35] v0.7.6221.37952, (C)2014-2017 Tim Potze
+[06:57:35] 
+[06:57:35]   Loaded.
+[06:57:35]  Loaded 2 plugins.
+
+[06:57:35] 
+[06:57:35] Filterscripts
+[06:57:35] ---------------
+[06:57:35]   Loaded 0 filterscripts.
+
+[06:57:35]   Filterscript 'empty.amx' loaded.
+[06:57:35] Gamemode
+[06:57:35] ---------------
+[06:57:35] Loading gamemode: CopsAndRobbers:GameMode
+[06:57:35] Loading image...
+[06:57:35] Creating gamemode instance...
+[06:57:35]   Loaded.
+[06:57:35] 
+[06:57:35] OnInitialized
+[06:57:35] Number of vehicle models: 37
+[06:57:35] LoadControllers
